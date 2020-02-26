@@ -29,3 +29,5 @@ router.put("/api", function (req, res) {
     }
   })
 });
+
+module.exports = router;

@@ -1,0 +1,18 @@
+<ul>
+  {{#each uneaten}}
+  <li>
+    <p>{{burger_name}}</p>
+    <button data-id="{{id}}" class="devour">Eat Me</button>
+    <button data-id="{{id}}" class="del">Remove</button>
+  </li>
+  {{/each}}
+</ul>
+
+<ul>
+  {{#each eaten}}
+  <li>
+    <p>{{burger_name}}</p>
+    <button data-id="{{id}}" class="del">Remove</button>
+  </li>
+  {{/each}}
+</ul>

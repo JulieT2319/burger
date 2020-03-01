@@ -21,14 +21,14 @@ router.get("/", function(req, res) {
 	});
 });
 
-router.post("/api", function(req, res) {
+router.post("/api/burgers", function(req, res) {
 	burger.add(req.body.name, function(result) {
 		// Send back the ID of the new burger
 		res.json({ id: result.insertId });
 	});
 });
 
-router.put("/api", function(req, res) {
+router.put("/api/burgers", function(req, res) {
 	burger.update(req.body.id, function(result) {
 		if (result.changedRows == 0) {
 			// If no rows were changed, then the ID must not exist, so 404

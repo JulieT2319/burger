@@ -1,0 +1,14 @@
+body {
+	background-image: url(../img/dark-grey-terrazzo.png);
+	background-color: gray;
+}
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+.h-200 {
+	max-height: 200px;
+}
+form {
+	padding: 1rem;
+}

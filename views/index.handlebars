@@ -10,9 +10,9 @@
       <ul>
         {{#each uneaten}}
         <li>
-          <p>{{burger_name}}</p>
-          <button data-id="{{id}}" class="devour-burger">Eat Me</button>
-          <button data-id="{{id}}" class="delete-burger">Remove</button>
+          <h5>{{burger_name}}</h5>
+          <button data-id="{{id}}" class="devour-burger btn indigo darken-3">Eat Me</button>
+          <button data-id="{{id}}" class="delete-burger btn red darken-4">Remove</button>
         </li>
         {{/each}}
       </ul>
@@ -22,8 +22,9 @@
       <ul>
         {{#each eaten}}
         <li>
-          <p>{{burger_name}}</p>
-          <button data-id="{{id}}" class="delete-burger">Remove</button>
+          <h5>{{burger_name}}</h5>
+          <button data-id="{{id}}" class="reorder-burger btn deep-purple darken-3">Order Another</button>
+          <button data-id="{{id}}" class="delete-burger btn red darken-4">Remove</button>
         </li>
         {{/each}}
       </ul>
@@ -39,7 +40,7 @@
           <input type="text" id="burger" name="burger">
         </div>
 
-        <button type="submit">Add Burger</button>
+        <button type="submit" class="btn green darken-4">Add Burger</button>
       </form>
     </div>
   </div>

@@ -11,8 +11,8 @@
         {{#each uneaten}}
         <li>
           <p>{{burger_name}}</p>
-          <button data-id="{{id}}" class="devour">Eat Me</button>
-          <button data-id="{{id}}" class="del">Remove</button>
+          <button data-id="{{id}}" class="devour-burger">Eat Me</button>
+          <button data-id="{{id}}" class="delete-burger">Remove</button>
         </li>
         {{/each}}
       </ul>
@@ -23,7 +23,7 @@
         {{#each eaten}}
         <li>
           <p>{{burger_name}}</p>
-          <button data-id="{{id}}" class="del">Remove</button>
+          <button data-id="{{id}}" class="delete-burger">Remove</button>
         </li>
         {{/each}}
       </ul>

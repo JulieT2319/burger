@@ -1,4 +1,4 @@
-# Burger Taker
+# Burger Tracker
 
 ![Burger Tracker screen shot](burger-ss.jpg)
 

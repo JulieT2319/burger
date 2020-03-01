@@ -11,9 +11,17 @@ const burger = {
 			cb(res);
 		});
 	},
-	update: function(conditionVal, cb) {
+	eat: function(conditionVal, cb) {
 		//table, column, value, conditionCol, conditionVal
 		orm.updateOne("burgers", "devoured", true, "id", conditionVal, function(
+			res
+		) {
+			cb(res);
+		});
+	},
+	reorder: function(conditionVal, cb) {
+		//table, column, value, conditionCol, conditionVal
+		orm.updateOne("burgers", "devoured", false, "id", conditionVal, function(
 			res
 		) {
 			cb(res);

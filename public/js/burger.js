@@ -34,7 +34,20 @@ $(function() {
 		let id = $(this).data("id");
 
 		// Send the PUT request.
-		$.ajax("/api/burgers/" + id, {
+		$.ajax("/api/eatburgers/" + id, {
+			type: "PUT",
+			data: id
+		}).then(function() {
+			// Reload the page to get the updated list
+			location.reload();
+		});
+	});
+	//reorder burger
+	$(".reorder-burger").on("click", function(event) {
+		let id = $(this).data("id");
+
+		// Send the PUT request.
+		$.ajax("/api/orderburgers/" + id, {
 			type: "PUT",
 			data: id
 		}).then(function() {
